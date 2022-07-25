@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="btn.css">
+    <link rel="icon" href="favicon.ico">
+    <title>東仙PLUS</title>
+</head>
+<body>
+
+<div id="contact" class="big-bg">
+    <header class="page-header wrapper">
+        <h1><a href="home.html"><img class="logo" src="logo.png" alt="WEBカフェ"></a></h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="news.html">会社概要</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <a href="#" class="btn btn-gradient"><span>CONTACT</span></a>
+            </ul>
+        </nav>
+    </header>
+  <div class="home-content wrapper">
+    <h2 class="page-title">CONTACT</h2>
+    <form action="#">
+        <div>
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="your-name">
+        </div>
+    </form>
+    <form action="#">
+        <div>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="your-email">
+        </div>
+    </form>
+    <form action="#">
+        <div>
+            <label for="messeage">メッセージ</label>
+            <textarea name="your-messeage" id="messeage"></textarea>
+        </div>
+    </form>
+    <input type="submit" class="button" value="送信">
+  </div>
+</div>
+
+<footer>
+    <p><small>面積約款</small></p>
+</footer>
+<style>
+    footer p{
+        padding: 14px ;
+        background-color: black;
+        text-align: center;
+        color: #fff;
+    }
+    .content{
+        text-align: center;
+        padding: 5%;
+    }
+
+    .main-nav{
+        display: flex;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        
+    }
+    .main-nav li{
+        margin-left:36px ;
+        margin-top: 34px;
+    }
+    .main-nav .btn-gradient{
+        display: inline-block;
+        margin-left:36px ;
+        margin-top: 16px;
+        
+    }
+    .page-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .wrapper{
+        max-width: 2100px;
+        margin: 0 auto;
+        padding: 0 4%;
+        
+    }
+</style>
+<style>
+    .page-title{
+        font-size: 4em;
+        padding: 1%;
+    }
+
+</style>
+<style>
+    .big-bg{
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        margin-bottom: 3%;
+    }
+    #contact{
+        background-image: url("福島.jpg"),linear-gradient(#c9ffbf,#ffafbd);
+                /* 画像にはbackground-colorとbrend-modeを併用すると色がつく */
+        /* background-color: beige; */
+        background-blend-mode: hard-light;
+        min-height: 100vh;
+    }
+    form div{
+        margin-bottom: 14px;
+    }
+    label{
+        font-size: 1.125rem;
+        margin-bottom: 10px;
+        display: block;
+    }
+    input[type="text"],
+    input[type="email"]{
+        width: 100%;
+        max-width: 240px;
+        font-size: 1.125rem;
+    }
+    textarea{
+        width: 100%;
+        max-width: 480px;
+        height: 6rem;
+    }
+    input[type="submit"]{
+        border: none;
+        cursor: pointer;
+        line-height: 1;
+        width: 120px;
+        background-color: aqua;
+        padding: 14px;
+        color: white;
+        font-size: 1em;
+        border-radius: 10px;
+       
+    }
+</style>
+    
+</body>
+</html>
