@@ -4,12 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="btn.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/btn.css') }}">
+    <link rel="icon" href="{{ asset('css/favicon.ico') }}">
     <title>東仙PLUS</title>
 </head>
 <body>
+
+<div class="top-op"></div>
+<div class="top-op2"></div>
+<div class="img"></div> 
+<style>
+     
+.top-op,.top-op2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+.top-op{
+  z-index: 99;
+  background: #f2f2f2;
+  animation-duration: 1.2s;
+  animation-delay:1.4s;
+  animation-fill-mode: forwards;
+  animation-name: top-op;
+}
+.top-op2{
+  z-index: 100;
+  background: #e2e2e2;
+  animation-duration: 0.7s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  animation-name: top-op2;
+}
+ 
+@keyframes top-op{
+0% {
+  width: 100%;
+  left:0;
+}
+50% {
+  width: 100%;
+}
+100% {
+  width: 0%;
+  left: 100%;
+}
+}
+@keyframes top-op2{
+0% {
+  width: 100%;
+  left:0;
+}
+50% {
+  width: 100%;
+}
+100% {
+  width: 0%;
+  left: 100%;
+}
+}
+ 
+</style>
 
 <div id="home" class="big-bg">
     <header class="page-header wrapper">

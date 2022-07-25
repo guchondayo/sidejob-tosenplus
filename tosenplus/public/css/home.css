@@ -88,7 +88,6 @@
         min-height: 100vh;
     }
 
-    <style>
     footer p{
         padding: 14px ;
         background-color: black;
@@ -110,9 +109,6 @@
     .ceo-greet-image img{
         width: 45%;
     }
-
-
-
 
     .main-nav{
         display: flex;
